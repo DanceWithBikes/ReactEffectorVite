@@ -3,16 +3,16 @@ import { AppBar, Tabs, Tab, Toolbar, Box } from "@mui/material";
 import { useNavigate, useLocation } from "react-router-dom";
 import { routes } from "@app/navigation/config";
 
-const tabPaths = routes.map((o) => o.path);
+const tabPaths = routes;
 
 const Header = () => {
   const navigate = useNavigate();
   const location = useLocation();
 
-  const currentTab = tabPaths.indexOf(location.pathname);
+  const currentTab = tabPaths.findIndex(t => t.match.test(location.pathname));
 
   const handleChange = (event, newValue) => {
-    navigate(tabPaths[newValue]);
+    navigate(tabPaths[newValue].path);
   };
 
   return (

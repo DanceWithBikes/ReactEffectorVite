@@ -9,19 +9,23 @@ export const routes = [
     path: "/",
     name: "Home",
     element: <HomePage />,
+    match: /^\/$/,
   },
   {
     path: "/repositories",
     name: "Repositories",
     element: <RepositoriesPage />,
+    match: /^\/repositories/,
   },
   {
-    path: '/repositories/:owner/:repo',
+    path: "/repositories/:owner/:repo",
     element: <RepositoryDetailsPage />,
+    match: /^\/repositories/,
   },
   {
     path: "*",
     name: "404",
     element: <NotFound />,
+    match: /.*/, // Fallback
   },
 ];

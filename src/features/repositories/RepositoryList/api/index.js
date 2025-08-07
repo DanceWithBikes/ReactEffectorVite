@@ -48,6 +48,7 @@ const $params = combine({ query: $query, page: $page, perPage: $perPage });
 // --- Запуск запроса при любом изменении параметров
 sample({
   source: $params,
+  fn: ({ owner, repo }) => ({ owner, repo }),
   target: fetchRepositoriesFx,
 });
 

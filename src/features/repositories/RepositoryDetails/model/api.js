@@ -19,6 +19,7 @@ export const $isRepoLoading = fetchRepoByNameFx.pending;
 
 sample({
   source: RepositoryDetailsGate.state, // или другой store
+  clock: RepositoryDetailsGate.open,
   fn: ({ owner, repo }) => ({ owner, repo }),
   target: fetchRepoByNameFx,
 });

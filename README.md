@@ -1,7 +1,8 @@
 - Feature Slice Design (https://feature-sliced.design/)
 - Atomic Design
 - DDD(not implemented, should be a part of /entities mostly)
-- RTK Query
+- React Effector
+- Webpack
 - React
 
 1. App — everything that makes the app run — routing, entrypoints, global styles, providers.

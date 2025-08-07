@@ -14,7 +14,6 @@ module.exports = {
     filename: "[name].[hash].js",
     publicPath: "/"
   },
-
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "src"),

@@ -1,5 +1,5 @@
 {
-  "name": "reactreduxplayground",
+  "name": "react-effector",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
@@ -32,6 +32,8 @@
     "@mui/material": "^7.2.0",
     "@reduxjs/toolkit": "^2.8.2",
     "axios": "^1.10.0",
+    "effector": "^23.4.1",
+    "effector-react": "^23.3.0",
     "framer-motion": "^12.23.3",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",

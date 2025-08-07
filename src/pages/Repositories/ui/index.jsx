@@ -1,16 +1,14 @@
 import React from "react";
-import RepositoriesList from "@features/repositories/RepositoriesList/ui";
-import { RepositoriesSearch } from "@features/repositories/RepositoriesSearch/ui";
-import useRepositories from "@features/repositories/model/hooks/useFetchReposQuery";
-import { Pagination } from "@widgets/pagination/ui";
+import RepositoriesList from "@features/repositories/RepositoryList/ui";
+import { RepositoriesSearch } from "@features/repositories/RepositorySearch/ui";
+import RepositoryPagination from "@features/repositories/RepositoryPagination/ui";
 
 function RepositoriesPage() {
-  const { ...queryMetaData } = useRepositories();
   return (
     <div>
-      <RepositoriesSearch {...queryMetaData} />
-      <RepositoriesList {...queryMetaData} />
-      <Pagination {...queryMetaData}/>
+      <RepositoriesSearch />
+      <RepositoriesList />
+      <RepositoryPagination />
     </div>
   );
 }

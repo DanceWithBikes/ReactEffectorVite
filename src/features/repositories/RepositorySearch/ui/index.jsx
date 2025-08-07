@@ -1,13 +1,16 @@
 import React, { useState } from "react";
 import './index.less';
 import { Box, Button, TextField } from "@mui/material";
+import { $query, changeQuery } from "@features/repositories/RepositoryList/api";
+import  { useUnit } from "effector-react";
 
-export const RepositoriesSearch = ({ query, setSubmittedQuery }) => {
+export const RepositoriesSearch = () => {
+  const [query, update]  = useUnit([$query, changeQuery]);
   const [input, setInput] = useState(query);
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    setSubmittedQuery(input);
+    update(input)
   };
 
   const handleOnChange = (e) => setInput(e.target.value);

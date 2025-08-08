@@ -3,8 +3,9 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "webpack": "npx webpack --config webpack.config.js",
-    "start": "webpack-dev-server"
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
   },
   "author": "",
   "license": "ISC",
@@ -13,17 +14,13 @@
     "@babel/core": "^7.28.0",
     "@babel/preset-env": "^7.28.0",
     "@babel/preset-react": "^7.27.1",
-    "babel-loader": "^10.0.0",
     "clean-webpack-plugin": "^4.0.0",
     "css-loader": "^7.1.2",
     "file-loader": "^6.2.0",
-    "html-webpack-plugin": "^5.6.3",
     "less-loader": "^12.3.0",
     "prettier": "3.6.2",
     "style-loader": "^4.0.0",
-    "webpack": "^5.99.9",
-    "webpack-cli": "^6.0.1",
-    "webpack-dev-server": "^5.2.2"
+    "vite": "^7.1.0"
   },
   "dependencies": {
     "@emotion/react": "^11.14.0",
@@ -31,6 +28,7 @@
     "@mui/icons-material": "^7.2.0",
     "@mui/material": "^7.2.0",
     "@reduxjs/toolkit": "^2.8.2",
+    "@vitejs/plugin-react": "^5.0.0",
     "axios": "^1.10.0",
     "effector": "^23.4.1",
     "effector-react": "^23.3.0",

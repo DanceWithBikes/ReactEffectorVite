@@ -2,7 +2,7 @@
 - Atomic Design
 - DDD(not implemented, should be a part of /entities mostly)
 - React Effector
-- Webpack
+- Vite
 - React
 
 1. App — everything that makes the app run — routing, entrypoints, global styles, providers.
